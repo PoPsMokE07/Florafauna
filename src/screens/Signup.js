@@ -31,6 +31,8 @@ function Signup() {
         await updateProfile(user, {
           displayName: values.name,
         });
+        sessionStorage.setItem('name',values.name)
+        sessionStorage.setItem('email',values.email)
         navigate("/");
       })
       .catch((err) => {
