@@ -7,8 +7,7 @@ function Main() {
         Save the Earth from the loss of biodiversity.
       </h1>
       <p className="w-9/12 mx-auto mt-4 text-lg text-center my-10 text-slate-200 tracking-wide">
-      Florafauna is a travel guide or finder for nature preserve or santauries which are  we filter based on location , critical factor(means current situation on population or scarcity) and for users fun purpose we can add filter based on animal so they can select there fav.
-      after selecting preserve you can do three things sponsor(donate) , Join Us and share (customize email)
+      Florafauna is a non-profit organization that works to protect the planet's biodiversity and ensure a healthy and sustainable future for all life on Earth.The website provides information on the importance of biodiversity and the threats facing it, including habitat destruction, climate change, and overexploitation of species.
       </p>
       <div className="flex w-5/6 m-auto justify-center font-serif">
         <Link className="font-serif" to={"/Profile"}>

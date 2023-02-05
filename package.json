@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.4.9",
     "@headlessui/react": "^1.7.9",
     "@heroicons/react": "^2.0.14",
     "@reduxjs/toolkit": "^1.9.2",
