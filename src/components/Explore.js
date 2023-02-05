@@ -39,7 +39,7 @@ const Explore = () => {
   return (
     <>  
         <header>
-            <Link to="/main" className='Title'>Florafauna<Link to="/" className='month'> Monthly Analysis<Link to="/Form" className='month'> Support</Link></Link></Link>
+            <Link to="/main" className='Title'>Florafauna<Link to="/analysis" className='month'> Monthly Analysis<Link to="/Form" className='month'> Support</Link></Link></Link>
             <Link to="/"> <button className='logout'>Logout</button></Link>
         </header>
         <h1>Explore The Wildlife</h1>

@@ -4,6 +4,7 @@ import Signup from "./screens/Signup";
 import Main from "./components/Main";
 import MainPage from "./components/MainPage";
 import Form from "./components/form";
+import Analysis from "./components/Analysis";
 import Explore from "./components/Explore";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/main" element={<MainPage/>} />
         <Route path="/explore" element={<Explore/>} />
         <Route path="/form" element={<Form/>}/>
+        <Route path="/analysis" element={<Analysis/>}/>
 
         </Routes>
       </BrowserRouter>
