@@ -74,7 +74,8 @@ const Explore = () => {
             {data.map((values) => {
                 const {id,image,pname,region,status,species} = values;
                 return(
-                    <>
+                    <>  
+                        <Link to="/form">
                         <div className='card' key={id}>
                             <img src={image} alt='img' style={{height:'400px',width:'500px'}}/>
                             <div className='card-body'>
@@ -82,10 +83,11 @@ const Explore = () => {
                                 <h4>Region : {region}</h4>
                                 <h4>Current Status : {status}</h4>
                                 <h4>Animal Species : {species[0]}, {species[1]}, {species[2]} and {species.length-3} Others</h4>
-                                <Link to="/form"><button>Info</button></Link>
+                                
                             </div>
                             <hr/>
                         </div>
+                        </Link>
                     </>
                 )
             })}
