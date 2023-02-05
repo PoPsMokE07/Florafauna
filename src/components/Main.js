@@ -4,7 +4,7 @@ function Main() {
   return (
     <div className="text-white flex flex-col py-32 w-9/12 m-auto">
       <h1 className="w-5/6 mt-24 mb-2 mx-auto text-center text-6xl font-alice tracking-wide">
-        Save the planet from the loss of biodiversity.
+        Save the Earth from the loss of biodiversity.
       </h1>
       <p className="w-9/12 mx-auto mt-4 text-lg text-center my-10 text-slate-200 tracking-wide">
       Florafauna is a travel guide or finder for nature preserve or santauries which are  we filter based on location , critical factor(means current situation on population or scarcity) and for users fun purpose we can add filter based on animal so they can select there fav.
