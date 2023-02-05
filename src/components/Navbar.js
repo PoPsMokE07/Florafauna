@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div className="flex justify-around w-11/12 m-auto text-slate-300 p-5">
       <div className=" flex w-2/12">
-        <img className="w-12 mb-1 mr-2" src={tree}></img>
+        <img className="w-12 mb-1 mr-2" src={tree} alt="tree"></img>
         <h1 className="text-slate-50 mt-1 font-alice text-3xl">Florafauna</h1>
       </div>
       <div className="w-6/12">
