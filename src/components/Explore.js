@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import WildData from './WildData';
 import { Link } from 'react-router-dom';
+import './style.css'
 
 
 const Explore = () => {
@@ -35,7 +36,11 @@ const Explore = () => {
 
 
   return (
-    <>
+    <>  
+        <header>
+            <Link to="/main" className='Title'>Florafauna<Link to="/" className='month'> Monthly Analysis</Link></Link>
+            <Link to="/"> <button className='logout'>Logout</button></Link>
+        </header>
         <h1>Explore The Wildlife</h1>
         
         <p className='but'>

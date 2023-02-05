@@ -7,8 +7,8 @@ function MainPage() {
   return (
     <>
       <header>
-        <Link to="/" className='Title'>Florafauna</Link>
-        <button className='logout'>Logout</button>
+        <Link to="/main" className='Title'>Florafauna<Link to="/" className='month'> Monthly Analysis</Link></Link>
+        <Link to="/"> <button className='logout'>Logout</button></Link>
       </header>
       <div className='intro'>
         <div className='image'>
@@ -18,14 +18,6 @@ function MainPage() {
       </div>
      
         <div class="container">
-          <div class="heading">
-              <h1>About Us</h1>
-            </div>
-          
-            <div class="content">
-              <p>Florafauna is a non-profit organization that works to protect the planet's biodiversity and ensure a healthy and sustainable future for all life on Earth.</p>
-              <p>The website provides information on the importance of biodiversity and the threats facing it, including habitat destruction, climate change, and overexploitation of species. It also highlights the solutions and actions that can be taken to protect biodiversity, such as conserving critical habitats, promoting sustainable use of natural resources, and addressing climate change.</p>
-            </div>  
             <div class="heading">
               <h1>Our Concern</h1>
             </div>
@@ -42,8 +34,8 @@ function MainPage() {
             </div>  
         </div>
 
-        <div className='button'>
-          <button className='exp'>Explore</button>
+        <div className='button' align='center'>
+          <Link to="/explore"><button className='exp'>Explore</button></Link>
         </div>
       
       

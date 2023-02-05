@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './style.css'
 // import bgimg from "../assets/bgimg.webp";
 // import { Button, ButtonGroup } from '@chakra-ui/react'
 
 const Form = () => {
     return(
         <>
+            <header>
+                <Link to="/main" className='Title'>Florafauna<Link to="/" className='month'> Monthly Analysis</Link></Link>
+                <Link to="/"> <button className='logout'>Logout</button></Link>
+            </header>
             <div className="form-div" align='center' >
                 <h1>Provide Support</h1>
                 <h1>to</h1>
