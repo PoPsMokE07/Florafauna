@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import bgimg from "../assets/bgimg.webp";
-import main from '../components/Main';
+// import main from "..components/MainPage";
 
 import InputControl from "../screens/InputControl";
 import { auth } from "../Firebase";
@@ -32,7 +32,8 @@ function Signup() {
         await updateProfile(user, {
           displayName: values.name,
         });
-        navigate("./main");
+        sessionStorage.setItem('name',values.name)
+        navigate("/");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
@@ -41,14 +42,11 @@ function Signup() {
   };
 
   return (
-    <div className="flex justify-around w-11/12 m-auto text-slate-300 p-5">
-      <div className=" flex w-2/12">
-        <h1 className="text-slate-50 mt-1 font-alice text-3xl">Florafauna</h1>
-      </div>
+    <div className="flex justify-around w-5/12 m-auto text-slate-400 p-4">
     
-    <div class="h-full min-h-screen w-full bg-gradient-to-r flex items-center justify-center" style={{ backgroundImage: `url(${bgimg})` }}>
+    <div class="h-full min-h-screen w-full bg-gradient-to-r flex items-center justify-center" >
       <div class="min-w-48 h-auto w-auto bg-white shadow-md p-6 rounded-lg flex flex-col gap-6 ">
-        <h1>Signup</h1>
+        <h1 style={{fontSize:"30px"}}>Signup</h1>
 
         <InputControl
           label="Name"

@@ -7,7 +7,7 @@ function MainPage() {
   return (
     <>
       <header>
-        <Link to="/main" className='Title'>Florafauna<Link to="/" className='month'> Monthly Analysis</Link></Link>
+        <Link to="/main" className='Title'>Florafauna<Link to="/analysis" className='month'> Monthly Analysis</Link></Link>
         <Link to="/"> <button className='logout'>Logout</button></Link>
       </header>
       <div className='intro'>
@@ -23,19 +23,19 @@ function MainPage() {
             </div>
           
             <div class="content">
-              <p>The loss of biodiversity is a serious concern as it impacts the variety of life on Earth, including the diversity of species, ecosystems, and genetic diversity within species. It has negative consequences such as loss of important ecosystem services, increased vulnerability to disease, decreased resilience to environmental changes, and more. To address the loss of biodiversity, it's important to implement conservation measures, promote sustainability, and raise awareness on the issue.</p>
+              <p style={{fontSize:"22px"}}>The loss of biodiversity is a serious concern as it impacts the variety of life on Earth, including the diversity of species, ecosystems, and genetic diversity within species. It has negative consequences such as loss of important ecosystem services, increased vulnerability to disease, decreased resilience to environmental changes, and more. To address the loss of biodiversity, it's important to implement conservation measures, promote sustainability, and raise awareness on the issue.</p>
             </div>
             <div class="heading">
               <h1>What we Provide</h1>
             </div>
           
             <div class="content">
-              <p>The website features a range of resources for individuals, organizations, and policymakers, including information on conservation initiatives, research and analysis, and educational materials. Visitors can also take action by supporting conservation projects, advocating for biodiversity-friendly policies, and participating in campaigns to protect threatened species and habitats.</p>
+              <p style={{fontSize:"22px"}}>The website features a range of resources for individuals, organizations, and policymakers, including information on conservation initiatives, research and analysis, and educational materials. Visitors can also take action by supporting conservation projects, advocating for biodiversity-friendly policies, and participating in campaigns to protect threatened species and habitats.</p>
             </div>  
         </div>
 
         <div className='button' align='center'>
-          <Link to="/explore"><button className='exp'>Explore</button></Link>
+          <Link to="/explore"><button className='exp' style={{fontSize:"22px"}}>Explore</button></Link>
         </div>
       
       

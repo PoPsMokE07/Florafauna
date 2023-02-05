@@ -37,13 +37,11 @@ function Login() {
       });
   };
   return (
-    <div className="flex justify-around w-11/12 m-auto text-slate-300 p-5">
-      <div className=" flex w-2/12">
-        <h1 className="text-slate-50 mt-1 font-alice text-3xl">Florafauna</h1>
-      </div>
-    <div class="h-full min-h-screen w-full bg-gradient-to-r flex items-center justify-center" style={{ backgroundImage: `url(${bgimg})` }}>
+    <div className="flex justify-around w-11/12 m-auto text-slate-400 p-5">
+
+    <div class="h-full min-h-screen w-full bg-gradient-to-r flex items-center justify-center" >
       <div class="min-w-48 h-auto w-auto bg-white shadow-md p-6 rounded-lg flex flex-col gap-6 ">
-        <h1>Login</h1>
+        <h1 style={{fontSize:"30px"}}>Login</h1>
 
         <InputControl
           label="Email"

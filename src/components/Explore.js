@@ -42,56 +42,51 @@ const Explore = () => {
             <Link to="/main" className='Title'>Florafauna<Link to="/analysis" className='month'> Monthly Analysis<Link to="/Form" className='month'> Support</Link></Link></Link>
             <Link to="/"> <button className='logout'>Logout</button></Link>
         </header>
-        <h1>Explore The Wildlife</h1>
+        <div className='whole' align="center">
+        <h1>Explore</h1>
         
         <p className='but'>
-            <button onClick={() => filterResult('Critical')}>Critical</button>
-            <button onClick={() => filterResult('Moderate')}>Moderate</button>
-            <button onClick={() => filterResult('Sustainable')}>Sustainable</button>
+            <strong>Biodiversity Index Level :</strong>  
+            <button onClick={() => filterResult('Critical')} style={{backgroundColor:"red"}}>Critical</button>
+            <button onClick={() => filterResult('Moderate')} style={{backgroundColor:"orange"}}>Moderate</button>
+            <button onClick={() => filterResult('Sustainable')} style={{backgroundColor:"green"}}>Sustainable</button>
         </p>
         <p className='sel'>
-            <select onChange={(e) => filterRegion(e.target.value)} style={{color:'black'}}>
-                <option>--Select the Region --</option>
-                <option>South Asia</option>
-                <option>South America</option>
+            <select onChange={(e) => filterRegion(e.target.value)} >
+            <option>-- Select the Region --</option>
+                <option>Asia Pacific</option>
+                <option>Latin America</option>
                 <option>Africa</option>
                 <option>North America</option>
-                <option>Europe</option>
-                <option>Australia</option>
-                <option>North Asia</option>
-                <option>Central Asia</option>   
+                <option>Europe & Central Asia</option> 
             </select>
-        </p>
-        <p className='ani'>
-            <select onChange={(e) => filterSpecies(e.target.value)} style={{color:'black'}}>
-                <option>--Select the Species --</option>
+            <select onChange={(e) => filterSpecies(e.target.value)} >
+                <option >-- Select the Species --</option>
                 {
                     data.map((opts,i)=><option key={i}>{opts.species[0]}</option>)
                 }
             </select>
+            
         </p>
-        <button onClick={() => noFilter()}>Remove Filter</button>
+        <button class="cut" onClick={() => noFilter()}>Remove Filter</button>
         <div className='cards'>
             {data.map((values) => {
                 const {id,image,pname,region,status,species} = values;
                 return(
                     <>  
-                        <Link to="/form">
                         <div className='card' key={id}>
                             <img src={image} alt='img' style={{height:'400px',width:'500px'}}/>
                             <div className='card-body'>
                                 <h3 className='park-name'>{pname}</h3>
-                                <h4>Region : {region}</h4>
-                                <h4>Current Status : {status}</h4>
-                                <h4>Animal Species : {species[0]}, {species[1]}, {species[2]} and {species.length-3} Others</h4>
+                                <h2>&#128640; {region} <strong> {status}</strong></h2>
+                                <h4>Animal Species : {species[0]}, {species[1]}, {species[2]}, ... + {species.length-3} &#128047;</h4>
                                 
                             </div>
-                            <hr/>
                         </div>
-                        </Link>
                     </>
                 )
             })}
+        </div>
         </div>
     </>
   )

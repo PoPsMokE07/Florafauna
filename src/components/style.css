@@ -67,8 +67,8 @@ header {
     max-width: fit-content;
     height: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 6%;
+    
     
 }
 
@@ -118,12 +118,14 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 3%;
+    border-radius: 12px;
 }
 
 .exp:hover{
     background-color: white;
     border: solid 2px black ;
     color: black;
+    text-decoration: underline;
 }
 
 .exp{
@@ -131,6 +133,7 @@ header {
     background: transparent;
     color: white;
     border: white 2px solid;
+    border-radius: 12px;
 }
 
 .form-div{
@@ -140,13 +143,13 @@ header {
 
 .form-div h1{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 34px;
 }
 
 .form-div img{
     padding-top: 1rem;
     height: 350px;
-    border-radius: 70px;
+    border-radius: 75px;
     box-shadow: 2px 2px 4px 2px rgba(18, 16, 16, 0.2);
 
 }
@@ -159,7 +162,7 @@ header {
     padding-right: 1rem;
     border: solid 2px white ;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
@@ -193,10 +196,110 @@ header {
     padding-top: 3%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    padding-bottom: 2%
+    padding-bottom: 0.5%
 }
 
 .report p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
+}
+
+.whole{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.whole h1{
+    font-size: 40px;
+    padding-bottom: 1%;
+    text-decoration: underline;
+}
+
+
+.but strong{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.but button{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    
+}
+
+.but{
+    padding-bottom: 2%;
+}
+
+.sel{
+    padding-bottom: 1.5%;
+}
+
+.sel select{
+    padding-left: 2%;
+    background-color: transparent;
+    border: white solid 2px;
+    margin-left: 10px;
+    font-size: 22px;
+    color: white;
+    border-radius: 12px;
+}
+
+.sel select option{
+    color: black
+}
+
+.cut{
+    color: rgb(8, 0, 253);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+
+.card{
+    float: left;
+    padding-left: 10%;
+}
+
+.card img{
+    border-radius: 70px;
+    box-shadow:22px 22px 24px 22px rgba(1, 1, 1, 0.2);
+    margin-bottom: 5%;
+}
+
+.card-body h3{
+    font-size: 30px;
+} 
+.card-body h3:hover{
+    text-decoration: underline;
+}
+
+.card-body h2{
+    font-size: 24px;
+    padding-bottom: 2%;
+}
+
+.card-body h2 strong{
+    border: white 2px solid;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 12px;
+    margin-left: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-body h4{
+    font-size: 24px;
+}
+
+.card-body{
+    padding-bottom: 4%;
 }
