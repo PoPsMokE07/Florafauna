@@ -12,11 +12,11 @@ function Main() {
       <div className="flex w-5/6 m-auto justify-center font-serif">
         <Link className="font-serif" to={"/Profile"}>
           <button className="bg-slate-50 text-lg  font-poppins m-5 tracking-wide rounded-md border-2  border-slate-200 border-solid p-2 px-6 text-stone-800 rounded-br-none hover:font-medium transition-all  hover:bg-transparent hover:scale-105 hover:text-slate-50">
-            Join Us.
+          <a href="https://discord.gg/5KEnYSU9">Join Us</a>
           </button>
         </Link>
         <button className="text-lg font-poppins m-5 tracking-wide hover:font-medium rounded-md border-2 border-slate-200 border-solid p-2 px-10 rounded-br-none hover:scale-105 transition-all hover:text-green-900 hover:bg-slate-50">
-          <a href="https://devpost.com/software/vogueeco-enkp1w">Learn More.</a>
+          <a href="https://devpost.com/software/florafauna">Learn More.</a>
         </button>
       </div>
     </div>
